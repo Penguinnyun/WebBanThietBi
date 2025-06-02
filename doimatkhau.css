@@ -1,0 +1,82 @@
+/* Container cho toàn bộ phần profile */
+.profile-container {
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+/* Định dạng chung cho form và tiêu đề */
+.profile-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Định dạng cho bảng và các ô nhập liệu */
+.profile-info {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile-info td {
+    padding: 10px;
+}
+
+.profile-info-input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Đảm bảo rằng padding và border nằm trong chiều rộng đã định */
+}
+
+.profile-info-title {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Định dạng các nút */
+button, .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5C67F2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #4A54E1;
+}
+
+/* Cách ly nút từ các thành phần khác */
+.profile-info-save {
+    margin-top: 20px;
+}
+
+/* Thêm một nút 'Quay lại' với màu sắc khác nhau */
+.btn {
+    background-color: #f44336;
+}
+
+.btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Loại bỏ các kiểu mặc định của các liên kết và đồng nhất kiểu cho tất cả liên kết */
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white; /* Chọn màu sắc phù hợp với thiết kế của bạn */
+}

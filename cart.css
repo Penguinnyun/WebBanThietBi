@@ -1,0 +1,186 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container, .container-2 {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.cart-info img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.total-price {
+    margin-top: 20px;
+}
+
+.total-price table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.total-price td {
+    padding: 12px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+}
+
+.total-price td:nth-child(2) {
+    text-align: right;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-method {
+    margin-bottom: 15px;
+}
+
+.payment-method label {
+    display: block;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.thanhtoan, .xoagiohang {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.thanhtoan {
+    background-color: #5cb85c;
+}
+
+.thanhtoan:hover {
+    background-color: #4cae4c;
+}
+
+.xoagiohang {
+    background-color: #d9534f;
+}
+
+.xoagiohang:hover {
+    background-color: #c9302c;
+}
+
+@media (max-width: 768px) {
+    .container, .container-2 {
+        width: 95%;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th {
+        text-align: right;
+    }
+
+    td {
+        text-align: left;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        padding-right: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .cart-info img {
+        max-width: 100%;
+    }
+}

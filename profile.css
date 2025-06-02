@@ -1,0 +1,104 @@
+/* Kiểu dáng cho vùng chứa thông tin cá nhân */
+.profile-container {
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Kiểu dáng cho form và các thành phần trong đó */
+.profile-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-title {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.profile-info {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile-info td {
+    padding: 12px;
+}
+
+.profile-info-input {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.profile-info-title {
+    font-weight: bold;
+    color: #444;
+    width: 30%;
+    text-align: left;
+}
+
+/* Kiểu dáng cho các nút và liên kết */
+button, .btn, .logout-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #5C67F2; /* Màu xanh nhạt cho các nút */
+}
+
+button:hover, .btn:hover, .logout-btn:hover {
+    background-color: #4A54E1; /* Màu xanh đậm khi di chuột qua */
+}
+
+.logout-btn {
+    margin-top: 20px;
+    background-color: #f44336; /* Màu đỏ cho nút đăng xuất */
+}
+
+.logout-btn:hover {
+    background-color: #c53727;
+}
+
+/* Loại bỏ gạch chân của các liên kết */
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+/* Điều chỉnh thiết kế phù hợp với các thiết bị */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .profile-info-input, .profile-info-title {
+        width: 100%;
+    }
+}
+/* Kiểu dáng cho nút cập nhật thông tin */
+.profile-info-save {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50; /* Màu xanh lá cây cho nút cập nhật thông tin */
+    transition: background-color 0.3s ease; /* Thêm hiệu ứng chuyển màu nhẹ nhàng */
+}
+
+.profile-info-save:hover {
+    background-color: #3e8e41; /* Màu xanh lá đậm hơn khi di chuột qua */
+}
