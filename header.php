@@ -37,12 +37,15 @@ if (isset($_SESSION["txtTenTaiKhoan"])) {
     </script>
 
     <div class="icons">
-        <a href="https://www.facebook.com/www.hacom.vn"><img src="/baitaplon/anhweb/logofb.png" alt="Facebook"></a>
-        <a href="https://www.youtube.com/channel/UCIoWNINN5sJcx1zboLXZmeA"><img src="/baitaplon/anhweb/logoyt.png"
+        <a href="https://github.com/Penguinnyun/WebBanThietBi"><img src="/baitaplon/anhweb/logofb.png"
+                alt="Facebook"></a>
+        <a href="https://github.com/Penguinnyun/WebBanThietBi"><img src="/baitaplon/anhweb/logoyt.png"
                 alt="YouTube"></a>
-        <a href="https://www.instagram.com/hacom.vn/"><img src="/baitaplon/anhweb/logoig.png" alt="Instagram"></a>
-        <a href="https://www.tiktok.com/@hacom.vn"><img src="/baitaplon/anhweb/logotiktok.png" alt="TikTok"></a>
-        <a href="https://technews.com.vn/"><img src="/baitaplon/anhweb/logonews.png" alt="News"></a>
+        <a href="https://github.com/Penguinnyun/WebBanThietBi"><img src="/baitaplon/anhweb/logoig.png"
+                alt="Instagram"></a>
+        <a href="https://github.com/Penguinnyun/WebBanThietBi"><img src="/baitaplon/anhweb/logotiktok.png"
+                alt="TikTok"></a>
+        <a href="https://github.com/Penguinnyun/WebBanThietBi"><img src="/baitaplon/anhweb/logonews.png" alt="News"></a>
         <!-- Điều kiện kiểm tra xem người dùng đã đăng nhập chưa -->
         <?php if (isset($tentaikhoan)): ?>
         <a href="profile.php?tentaikhoan=<?php echo $tentaikhoan ?>"><img src="/baitaplon/anhweb/accounticonmoi.png"
