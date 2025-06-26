@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 09, 2025 at 06:33 PM
+-- Generation Time: Jun 26, 2025 at 04:01 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -37,7 +37,6 @@ CREATE TABLE `tbl_danhmuc` (
 --
 
 INSERT INTO `tbl_danhmuc` (`tendanhmuc`, `duongdan`) VALUES
-('a\'bc', 'abc.php'),
 ('Laptop', 'laptop.php'),
 ('Linh kiện máy tính', 'linhkienmaytinh.php'),
 ('Màn hình máy tính', 'manhinhmaytinh.php'),
